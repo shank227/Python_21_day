@@ -6,12 +6,15 @@ print("\n1. Start")
 print("2. Instructions")
 print("3. Exit")
 
+## counter for initialinzing score in the game
 score = 0
 
 ## Input to choose the option
 option = int(input("Choose the option from above please: "))
 
 ## Outcomes of choosing the options with specific control flow statements
+
+## Outcome of selecting Option 1
 if option == 1:
 
     name = input("Enter Your name: ")
@@ -59,14 +62,18 @@ if option == 1:
         print('Incorrect')
     
     print("Well " + name + " you have achieved " + str((score/5)*100) + "%. ")
-    
+
+## Outcome of selecting Option 2
 elif option == 2:
     print("\t\t\t\t Rules \t\t\t\t")
     print("1. 5 Questions will be asked in an orderly manner related to basics of Computer Science(CS) & Mathematics")
     print("2. The Answer can be typed below the Question")
     print("3. If the answers are correct 1 point the user will recieve; if its wrong 0 point will be recieved")
     print("4. With so on answering the questions, finally your score will be calculated and dsiplayed with your username..")
+
+## Outcome of selecting Option 3
 elif option == 3:
     exit()
+## Outcome of if any-other option selected instead of available options
 else:
     print("Invalid Entry!! Please choose from the options available above...")
