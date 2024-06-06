@@ -61,6 +61,7 @@ if option == 1:
     else:
         print('Incorrect')
     
+    print("\nYou got " + str(score) + " questions correct")
     print("Well " + name + " you have achieved " + str((score/5)*100) + "%. ")
 
 ## Outcome of selecting Option 2
